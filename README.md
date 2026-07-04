@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.png" alt="Banner" width="100%">
+  <img src="banner hr.png" alt="Banner" width="100%">
 </p>
 
 # 🏢 HR Database Management System
