@@ -1,77 +1,209 @@
-# HR Database Management System (SQL) 🗄️
+<p align="center">
+  <img src="assets/banner.png" alt="Banner" width="100%">
+</p>
 
-## Project Overview
-This project demonstrates the design and implementation of a SQL-based HR Database Management System to store, manage, and analyze employee data efficiently.
+# 🏢 HR Database Management System
 
-## Business Use Case
-Organizations require centralized HR databases to manage employee records, salary structures, reporting hierarchies, and workforce analytics. This project simulates a real-world HR system using SQL.
+A SQL-based Human Resource Database Management System designed to manage employee information, departments, job roles, salaries, locations, and reporting hierarchy while demonstrating practical SQL concepts used in real-world business environments.
 
-## Project Workflow
-1. Designed relational HR database schema
-2. Created tables with primary and foreign key constraints
-3. Inserted employee, salary, and project data
-4. Performed HR analytics using SQL queries
-5. Generated insights for workforce and salary analysis
+---
 
-## Key SQL Concepts Used
-- CREATE, INSERT, SELECT
-- PRIMARY KEY & FOREIGN KEY
-- JOINS (INNER, LEFT)
-- GROUP BY & HAVING
-- Subqueries
-- Aggregate Functions
-- Data Integrity Constraints
+## 📌 Project Overview
 
-## HR Insights Generated
-- Employee distribution across projects
-- Salary and variable pay analysis
-- Manager–employee reporting hierarchy
-- Hiring trends based on joining dates
-- Identification of missing or duplicate records
+Managing employee information across departments can become difficult as organizations grow. This project demonstrates how a relational database can organize HR data efficiently using SQL.
 
-## Key Business Questions Answered
+The database models employees, departments, job roles, salaries, managers, locations, countries, regions, and employee dependents through well-defined relationships and constraints.
 
-The SQL queries in this project aim to answer important HR-related questions such as:
+The project focuses on both database design and analytical SQL queries to answer common HR business questions.
 
-1. How are employees distributed across different departments?
-2. What is the salary distribution within the organization?
-3. Which managers supervise the largest teams?
-4. Which departments have the highest employee count?
-5. What are the hiring trends based on employee joining dates?
-6. Are there any duplicate or missing records in the database?
+---
 
-##Key Insights
+# 🎯 Business Problem
 
-From the analysis performed using SQL queries, several insights can be observed:
+Organizations need a centralized HR database to:
 
-1.Employee distribution varies across departments.
-2.Certain managers supervise significantly larger teams.
-3.Salary levels vary between job roles and departments.
-4.Hiring patterns reveal periods of organizational growth.
-5.Data quality checks help identify missing or duplicate records.
-6.These insights demonstrate how SQL can be used to analyze HR data and support decision-making.
+- Store employee information
+- Manage departments
+- Track reporting hierarchy
+- Analyze salary distribution
+- Monitor hiring trends
+- Generate workforce insights
 
-## Tools Used
-- SQL Server
+This project simulates a real HR database that supports these requirements.
+
+---
+
+# 🗺 Database Architecture
+
+<p align="center">
+<img src="screenshots/ER-Diagram.png" width="900">
+</p>
+
+---
+
+# 📊 Database Tables
+
+| Table | Description |
+|--------|-------------|
+| Employees | Employee details |
+| Departments | Department information |
+| Jobs | Job titles and salary ranges |
+| Dependents | Employee dependents |
+| Locations | Office locations |
+| Countries | Countries |
+| Regions | Geographic regions |
+
+---
+
+# ⚙ Technologies Used
+
+- Microsoft SQL Server
+- SQL Server Management Studio (SSMS)
+- SQL
 - Microsoft PowerPoint
 
-## Repository Structure
-- `sql/` – SQL scripts for database creation and analysis
-- `presentation/` – Project presentation explaining logic and insights
+---
 
-## Files
-- `HR_Database_Management_System.sql`
-SQL script containing database creation, table definitions, and analytical queries.
-- `HR_Database_Project_Presentation.pptx`
-Presentation explaining the database design, workflow, and insights.
+# 💡 SQL Concepts Demonstrated
 
-## Future Enhancements
-- Attendance and leave management modules
-- Performance evaluation system
-- Payroll integration
-- Power BI / Tableau dashboards
+✔ Database Design
 
-##Skills: SQL • Power BI • Excel • Python
+✔ Primary Keys
 
-##GitHub: https://github.com/Jayesh23B
-##LinkedIn: https://linkedin.com/in/jayeshbacchav9
+✔ Foreign Keys
+
+✔ Data Integrity Constraints
+
+✔ INNER JOIN
+
+✔ LEFT JOIN
+
+✔ Aggregate Functions
+
+✔ GROUP BY
+
+✔ HAVING
+
+✔ Subqueries
+
+✔ Self Join
+
+✔ Sorting & Filtering
+
+✔ HR Data Analysis
+
+---
+
+# 🔄 Project Workflow
+
+```text
+Database Design
+      ↓
+Table Creation
+      ↓
+Relationship Mapping
+      ↓
+Data Insertion
+      ↓
+SQL Analysis
+      ↓
+Business Insights
+```
+
+---
+
+# 📈 Business Questions Answered
+
+- How many employees work in each department?
+- Which departments have the highest workforce?
+- Which managers supervise the largest teams?
+- What is the average salary by department?
+- Which employees receive the highest salaries?
+- What are the hiring trends?
+- Which employees have dependents?
+- How is the reporting hierarchy structured?
+
+---
+
+# 📷 Sample Query Results
+
+### Department-wise Employee Count
+
+<p align="center">
+<img src="screenshots/Query-01-Department-Count.png" width="850">
+</p>
+
+---
+
+### Highest Salary Analysis
+
+<p align="center">
+<img src="screenshots/Query-02-Highest-Salary.png" width="850">
+</p>
+
+---
+
+### Manager Reporting Hierarchy
+
+<p align="center">
+<img src="screenshots/Query-03-Manager-Hierarchy.png" width="850">
+</p>
+
+---
+
+### Average Salary by Department
+
+<p align="center">
+<img src="screenshots/Query-04-Average-Salary.png" width="850">
+</p>
+
+---
+
+# 📊 Key Insights
+
+- Employee distribution differs across departments.
+- Executive and Finance departments have higher salary ranges.
+- Manager hierarchy is maintained using self-referencing foreign keys.
+- Normalized schema minimizes data redundancy.
+- SQL joins enable meaningful business reporting.
+- Aggregate functions help summarize workforce information.
+
+---
+
+# 📁 Repository Structure
+
+```
+HR-Database-SQL-Project
+│
+├── sql
+├── screenshots
+├── presentation
+├── assets
+└── README.md
+```
+
+---
+
+# 🚀 Future Enhancements
+
+- Payroll Management
+- Attendance Module
+- Leave Management
+- Employee Performance Dashboard
+- Power BI Dashboard
+- Stored Procedures
+- Views
+- Index Optimization
+
+---
+
+# 👨‍💻 Author
+
+**Jayesh Bacchav**
+
+Data Analyst | SQL | Python | Power BI | Excel
+
+📧 LinkedIn:
+https://linkedin.com/in/jayeshbacchav9
+
+⭐ If you found this project useful, consider giving it a Star.
