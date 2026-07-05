@@ -169,15 +169,14 @@ This project answers several practical HR business questions, including:
 
 The following examples demonstrate how SQL queries can be used to analyze HR data and support business decision-making.
 
+<p align="center">
+<img src="screenshots/SQL Query Results.png" width="850">
+</p>
 ---
 
 ## 📊 Department-wise Employee Count
 
 This query calculates the number of employees working in each department.
-
-<p align="center">
-<img src="screenshots/SQL Query Results.png" width="850">
-</p>
 
 **Insight**
 
@@ -189,10 +188,6 @@ This query calculates the number of employees working in each department.
 
 This query retrieves the highest-paid employees by sorting salaries in descending order.
 
-<p align="center">
-<img src="screenshots/SQL Query Results.png" width="850">
-</p>
-
 **Insight**
 
 - Senior roles receive significantly higher salaries than entry-level positions.
@@ -202,10 +197,6 @@ This query retrieves the highest-paid employees by sorting salaries in descendin
 ## 👥 Manager Reporting Hierarchy
 
 This query uses a Self Join to display employees along with their reporting managers.
-
-<p align="center">
-<img src="screenshots/SQL Query Results.png" width="850">
-</p>
 
 **Insight**
 
@@ -217,10 +208,6 @@ This query uses a Self Join to display employees along with their reporting mana
 
 This query calculates the average salary of employees within each department.
 
-<p align="center">
-<img src="screenshots/SQL Query Results.png" width="850">
-</p>
-
 **Insight**
 
 - Salary distribution varies across departments depending on job roles and responsibilities.
@@ -230,10 +217,6 @@ This query calculates the average salary of employees within each department.
 ## 📅 Hiring Trends
 
 This query groups employees by hiring year to identify recruitment trends.
-
-<p align="center">
-<img src="screenshots/SQL Query Results.png" width="850">
-</p>
 
 **Insight**
 
