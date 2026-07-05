@@ -36,7 +36,7 @@ This project simulates a real HR database that supports these requirements.
 # 🗺 Database Architecture
 
 <p align="center">
-<img src="screenshots/ER-Diagram.png" width="900">
+<img src="screenshots/hr er diagram.png" width="900">
 </p>
 
 ---
