@@ -38,7 +38,7 @@ The HR database follows a **normalized relational database design** that minimiz
 The system consists of seven interconnected tables representing different components of an organization's HR operations.
 
 <p align="center">
-<img src="screenshots/hr er diagram.png" width="900">
+<img src="diagrams/hr er diagram.png" width="900">
 </p>
 
 ### Database Relationships
