@@ -176,7 +176,7 @@ The following examples demonstrate how SQL queries can be used to analyze HR dat
 This query calculates the number of employees working in each department.
 
 <p align="center">
-<img src="screenshots/Query-01-Department-Count.png" width="850">
+<img src="screenshots/SQL Query Results.png" width="850">
 </p>
 
 **Insight**
@@ -190,7 +190,7 @@ This query calculates the number of employees working in each department.
 This query retrieves the highest-paid employees by sorting salaries in descending order.
 
 <p align="center">
-<img src="screenshots/Query-02-Highest-Salary.png" width="850">
+<img src="screenshots/SQL Query Results.png" width="850">
 </p>
 
 **Insight**
@@ -204,7 +204,7 @@ This query retrieves the highest-paid employees by sorting salaries in descendin
 This query uses a Self Join to display employees along with their reporting managers.
 
 <p align="center">
-<img src="screenshots/Query-03-Manager-Hierarchy.png" width="850">
+<img src="screenshots/SQL Query Results.png" width="850">
 </p>
 
 **Insight**
@@ -218,7 +218,7 @@ This query uses a Self Join to display employees along with their reporting mana
 This query calculates the average salary of employees within each department.
 
 <p align="center">
-<img src="screenshots/Query-04-Average-Salary.png" width="850">
+<img src="screenshots/SQL Query Results.png" width="850">
 </p>
 
 **Insight**
@@ -232,7 +232,7 @@ This query calculates the average salary of employees within each department.
 This query groups employees by hiring year to identify recruitment trends.
 
 <p align="center">
-<img src="screenshots/Query-05-Hiring-Trends.png" width="850">
+<img src="screenshots/SQL Query Results.png" width="850">
 </p>
 
 **Insight**
