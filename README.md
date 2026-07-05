@@ -4,52 +4,68 @@
 
 # 🏢 HR Database Management System
 
-A SQL-based Human Resource Management System that demonstrates relational database design, data management, and business analysis using Microsoft SQL Server. This project simulates a real-world HR database for storing employee information and generating meaningful workforce insights through SQL queries.
+A SQL-based Human Resource Management System developed using Microsoft SQL Server to demonstrate relational database design, data management, and business analytics. The project models a real-world HR environment by managing employee information, departments, job roles, salaries, office locations, and reporting hierarchies while generating meaningful business insights through SQL.
 
 ---
 
-## 📌 Project Overview
+# 📌 Project Overview
 
-Human Resource departments manage large volumes of employee data, including departments, job roles, salaries, reporting hierarchies, and office locations. This project demonstrates how a normalized relational database can efficiently organize this information while supporting business reporting and analytical decision-making.
+As organizations grow, managing employee information efficiently becomes increasingly important. This project demonstrates how a normalized relational database can organize HR data while supporting workforce analytics and business reporting.
 
-The project covers database design, table relationships, sample data creation, and SQL queries that answer common HR business questions.
+The system models multiple HR entities such as employees, departments, jobs, locations, countries, regions, and dependents, using well-defined relationships and database constraints to maintain data integrity.
 
 ---
 
 # 🎯 Business Problem
 
-Organizations require a centralized HR database to:
+Organizations require a centralized Human Resource database to:
 
-- Store employee information
+- Store employee records
 - Manage departments and job roles
 - Maintain reporting hierarchies
 - Analyze salary distribution
 - Track hiring trends
-- Support HR decision-making through analytics
+- Support HR decision-making through business analytics
 
-This project simulates these real-world requirements using SQL Server.
+This project simulates these real-world business requirements using SQL Server.
 
 ---
 
 # 🗺️ Database Architecture
 
+The HR database follows a **normalized relational database design** that minimizes redundancy while maintaining referential integrity through Primary Keys and Foreign Keys.
+
+The system consists of seven interconnected tables representing different components of an organization's HR operations.
+
 <p align="center">
 <img src="screenshots/hr er diagram.png" width="900">
 </p>
+
+### Database Relationships
+
+- **Regions** → Stores geographical regions.
+- **Countries** → Linked to regions where the organization operates.
+- **Locations** → Represents office locations.
+- **Departments** → Connected to office locations.
+- **Jobs** → Stores job titles and salary ranges.
+- **Employees** → Central table containing employee information.
+- **Dependents** → Stores employee dependent details.
+
+This structure demonstrates relational database modeling using normalization and referential integrity constraints.
 
 ---
 
 # 📊 Database Tables
 
-| Table | Description |
-|--------|-------------|
-| Employees | Stores employee information |
-| Departments | Department details |
-| Jobs | Job titles and salary ranges |
-| Dependents | Employee dependents |
-| Locations | Office locations |
-| Countries | Country information |
-| Regions | Geographic regions |
+| Table | Purpose |
+|--------|----------|
+| Employees | Stores employee information including salary, department, manager, and job role. |
+| Departments | Stores department details within the organization. |
+| Jobs | Stores job titles along with minimum and maximum salary ranges. |
+| Dependents | Maintains employee dependent records. |
+| Locations | Stores office locations. |
+| Countries | Stores countries where company offices are located. |
+| Regions | Groups countries into geographical regions. |
 
 ---
 
@@ -65,14 +81,17 @@ This project simulates these real-world requirements using SQL Server.
 # 💡 SQL Concepts Demonstrated
 
 - Database Design
+- Table Relationships
 - Primary Keys
 - Foreign Keys
 - Data Integrity Constraints
+- INSERT
+- SELECT
 - INNER JOIN
 - LEFT JOIN
-- Aggregate Functions
 - GROUP BY
 - HAVING
+- Aggregate Functions
 - Subqueries
 - Self Join
 - Sorting & Filtering
@@ -91,9 +110,9 @@ Relationship Mapping
       ↓
 Data Insertion
       ↓
-SQL Analysis
+Business Query Execution
       ↓
-Business Insights
+HR Analytics & Insights
 ```
 
 ---
@@ -119,7 +138,21 @@ HR-Database-SQL-Project
 
 ---
 
+# 📄 SQL Files
+
+The project is organized into separate SQL scripts for better readability and maintainability.
+
+| File | Description |
+|------|-------------|
+| **01_schema.sql** | Creates the database, tables, relationships, and constraints. |
+| **02_insert_data.sql** | Inserts sample HR records into each table. |
+| **03_analysis_queries.sql** | Contains SQL queries used to analyze HR data and generate business insights. |
+
+---
+
 # 📈 Business Questions Answered
+
+This project answers several practical HR business questions, including:
 
 - How many employees work in each department?
 - Which departments have the highest employee count?
@@ -134,64 +167,99 @@ HR-Database-SQL-Project
 
 # 📷 Sample Query Results
 
+The following examples demonstrate how SQL queries can be used to analyze HR data and support business decision-making.
+
+---
+
 ## 📊 Department-wise Employee Count
+
+This query calculates the number of employees working in each department.
 
 <p align="center">
 <img src="screenshots/Query-01-Department-Count.png" width="850">
 </p>
 
+**Insight**
+
+- The IT department contains the highest number of employees in the sample dataset.
+
 ---
 
 ## 💰 Top 5 Highest Paid Employees
+
+This query retrieves the highest-paid employees by sorting salaries in descending order.
 
 <p align="center">
 <img src="screenshots/Query-02-Highest-Salary.png" width="850">
 </p>
 
+**Insight**
+
+- Senior roles receive significantly higher salaries than entry-level positions.
+
 ---
 
 ## 👥 Manager Reporting Hierarchy
+
+This query uses a Self Join to display employees along with their reporting managers.
 
 <p align="center">
 <img src="screenshots/Query-03-Manager-Hierarchy.png" width="850">
 </p>
 
+**Insight**
+
+- Reporting relationships are maintained using the `manager_id` foreign key.
+
 ---
 
 ## 📈 Average Salary by Department
+
+This query calculates the average salary of employees within each department.
 
 <p align="center">
 <img src="screenshots/Query-04-Average-Salary.png" width="850">
 </p>
 
+**Insight**
+
+- Salary distribution varies across departments depending on job roles and responsibilities.
+
 ---
 
 ## 📅 Hiring Trends
+
+This query groups employees by hiring year to identify recruitment trends.
 
 <p align="center">
 <img src="screenshots/Query-05-Hiring-Trends.png" width="850">
 </p>
 
+**Insight**
+
+- Hiring trends help HR understand periods of organizational growth and workforce expansion.
+
 ---
 
 # 📊 Key Insights
 
-- Employee distribution varies across departments.
-- The IT department contains the highest number of employees in the sample dataset.
-- Salary distribution differs across departments and job roles.
-- Reporting hierarchy is maintained using self-referencing foreign keys.
-- Aggregate SQL functions provide valuable workforce insights.
-- A normalized database structure reduces redundancy and improves data integrity.
+- Employee distribution differs across departments.
+- The IT department has the largest workforce in the sample dataset.
+- Salary distribution varies across departments and job roles.
+- Reporting hierarchy is implemented using self-referencing foreign keys.
+- Aggregate SQL functions enable meaningful workforce analysis.
+- Database normalization minimizes redundancy and improves data consistency.
 
 ---
 
 # 🚀 Future Enhancements
 
 - Payroll Management Module
-- Attendance Management System
+- Attendance Management
 - Leave Management
 - Employee Performance Tracking
-- Stored Procedures and Views
+- Stored Procedures
+- Views
 - Index Optimization
 - Power BI Dashboard Integration
 
@@ -203,9 +271,10 @@ HR-Database-SQL-Project
 
 **Data Analyst | SQL | Python | Power BI | Excel**
 
-📧 **LinkedIn:**  
+📧 **LinkedIn**
+
 https://linkedin.com/in/jayeshbacchav9
 
 ---
 
-⭐ **If you found this project useful, consider giving it a Star.**
+⭐ **If you found this project useful, consider giving it a Star!**
